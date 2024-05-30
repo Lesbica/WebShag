@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside {
+    padding: 20px;
+    width: 30%;
+    float: left;
+    color: black;
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+aside ul li {
+    margin-bottom: 30px;
+}
+
+aside ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    width: auto;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 30%;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main ol li {
+    margin-bottom: 30px;
+}
+
+main img {
+    width: calc(33.33% - 20px); /* 33% ширини блоку main з відступом */
+    height: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}

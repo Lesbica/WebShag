@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>MY WEATHER</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter city">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    <nav>
+        <button class="tab-btn active" data-tab="today">Today</button>
+        <button class="tab-btn" data-tab="forecast">5-day forecast</button>
+    </nav>
+    <main>
+        <section id="today" class="tab-content active">
+            <div id="current-weather" class="weather-block">
+            </div>
+            <div id="hourly-forecast" class="weather-block">
+            </div>
+            <div id="nearby-places" class="weather-block">
+            </div>
+        </section>
+        <section id="forecast" class="tab-content">
+            <div id="five-day-forecast" class="weather-block">
+            </div>
+            <div id="selected-day-forecast" class="weather-block">
+            </div>
+        </section>
+        <section id="error" class="tab-content">
+            <div class="error-message">
+                
+            </div>
+        </section>
+    </main>
+</div>
+<script src="fetchAPI.js"></script>
+<script src="examen.js"></script>
+<script src="functions.js"></script>
+</body>
+</html>

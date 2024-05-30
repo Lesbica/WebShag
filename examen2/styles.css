@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    color: #27ae60;
+}
+
+.search-container {
+    display: flex;
+}
+
+#search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#search-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #27ae60;
+    color: white;
+    border: 1px solid #27ae60;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+
+nav {
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.weather-block {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.weather-block h2 {
+    margin-top: 0;
+    color: #27ae60;
+}
+
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.weather-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.weather-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.error-message {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.error-message h2 {
+    font-size: 48px;
+    color: #e74c3c;
+}
+
+.error-message p {
+    font-size: 18px;
+}

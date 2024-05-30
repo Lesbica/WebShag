@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристична компанія "Travel"</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<header>
+    <h1>Туристична компанія "Travel"</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="features.html">Переваги</a></li>
+            <li><a href="feedback.html">Зворотній зв'язок</a></li>
+        </ul>
+    </nav>
+</header>
+<aside>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="features.html">Переваги</a></li>
+            <li><a href="feedback.html">Зворотній зв'язок</a></li>
+        </ul>
+</aside>
+<main>
+    <h2>Зворотній зв'язок</h2>
+    <form action="submit_feedback.php" method="post">
+        <div>
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name"><br>
+        </div>
+        <div>
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email"><br>
+        </div>
+        <div>
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone"><br>
+        </div>
+        <div>
+            <label>Зв'язок з відправником:</label><br>
+            <input type="radio" id="contact_email" name="contact" value="email">
+            <label for="contact_email">Електронна пошта</label><br>
+            <input type="radio" id="contact_phone" name="contact" value="phone">
+            <label for="contact_phone">Телефон</label><br>
+            <input type="radio" id="contact_telegram" name="contact" value="telegram">
+            <label for="contact_telegram">Telegram</label><br>
+        </div>
+        <div>
+            <label for="topic">Тема повідомлення:</label><br>
+            <select id="topic" name="topic">
+                <option value="1">Надіслати свою історію</option>
+                <option value="2">Приєднатись до подорожі</option>
+                <option value="3">Взяти участь у зйомках фільму</option>
+            </select><br>
+        </div>
+        <div>
+            <label for="message">Повідомлення:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+        </div>
+        <div>
+            <input type="checkbox" id="not_robot" name="not_robot">
+            <label for="not_robot">Я не робот</label><br>
+        </div>
+        <div>
+            <input type="submit" value="Відправити">
+        </div>
+    </form>
+</main>
+</body>
+</html>
